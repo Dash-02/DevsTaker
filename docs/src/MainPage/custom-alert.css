@@ -1,9 +1,20 @@
 .react-confirm-alert-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+  background-color: rgba(0, 0, 0, 0.8);
+}
   
-  .react-confirm-alert-body {
-    background-color: #333;
-    color: #fff;
-  }
-  
+.react-confirm-alert-body {
+  background-color: #333;
+  color: #fff;
+}
+
+.react-confirm-alert-button-group > button:first-child {
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 16px;
+}
+
+.react-confirm-alert-button-group > button:last-child {
+  background-color: #d9534f;
+  color: #fff;
+  font-size: 16px;
+}
