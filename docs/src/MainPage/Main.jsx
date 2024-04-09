@@ -34,34 +34,31 @@ function Main() {
     });
   };
 
+
   const showAlertEn = () => {
-    const result = window.confirm('Вы уверены, что хотите загрузить англоязычную версию DevsTaker?');
-
-    if (result) {
-      const downloadLink = document.createElement('a');
-      downloadLink.href = fileApkEn;
-      downloadLink.download = 'universal.apk';
-      downloadLink.click();
-    } else {
-      console.log('Вы нажали "Отмена"');
-    }
+    confirmAlert({
+      title: 'Подтверждение',
+      message: 'Вы уверены, что хотите загрузить англоязычную версию DevsTaker?',
+      buttons: [
+        {
+          label: 'Да',
+          onClick: () => {
+            const downloadLink = document.createElement('a');
+            downloadLink.href = fileApkEn;
+            downloadLink.download = 'universal.apk';
+            downloadLink.click();
+          }
+        },
+        {
+          label: 'Отмена',
+          onClick: () => {
+            console.log('Вы нажали "Отмена"');
+          }
+        }
+      ]
+    });
   };
-
-  // const downloadRu = () => {
-  //   showAlert();
-  //   const downloadLink = document.createElement('a');
-  //   downloadLink.href = fileApkRu;
-  //   downloadLink.download = 'universal.apk';
-  //   downloadLink.click();
-  // };
-
-  // const downloadEn = () => {
-  //   const downloadLink = document.createElement('a');
-  //   downloadLink.href = fileApkEn;
-  //   downloadLink.download = 'universal.apk';
-  //   downloadLink.click();
-  // };
-
+  
   return (
     <>
       <div className="container">
