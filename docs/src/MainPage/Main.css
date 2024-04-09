@@ -2,6 +2,9 @@ body {
     background-color: #030126;
     
     align-items: flex-start;
+    
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -45,8 +48,6 @@ body {
 
     background: linear-gradient(to right, #FBD78B, #BF4BB4);
 
-    /* position: relative; */
-    /* z-index: 2; */
     cursor: pointer;
 
     margin-top: 40px;
@@ -58,7 +59,7 @@ body {
     transition: opacity 0.1s;
 }
 
-.btn-shadow {
+/* .btn-shadow {
     width: 300px;
     height: 65px;
 
@@ -70,17 +71,12 @@ body {
     left: 780px;
     z-index: 1;
     cursor: pointer; 
-}
+} */
 
 .btn-div {
     display: flex;
     flex-wrap: nowrap;
 }
-
-/* .btn-div:active {
-    opacity: 0.8;
-    transition: opacity 0.1s;
-} */
 
 .text {
     font-family: 'Play', sans-serif;
@@ -110,4 +106,59 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+@media(max-width: 770px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .text-p {
+        font-size: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .btn {
+        font-size: 20px;
+    
+        width: 200px;
+        height: 60px;
+
+        margin: 20px 5px;
+    }
+
+    .btn-div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
