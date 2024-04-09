@@ -1,0 +1,9 @@
+.react-confirm-alert-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .react-confirm-alert-body {
+    background-color: #333;
+    color: #fff;
+  }
+  
