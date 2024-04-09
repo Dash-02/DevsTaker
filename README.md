@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# DevsTaker
+
+Notes for developers "DevsTaker" is a modern mobile application that was created specifically for programmers and developers, designed for writing and managing notes. Developed in collaboration with [AmetDev](https://github.com/AmetDev).
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
