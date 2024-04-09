@@ -1,0 +1,113 @@
+body {
+    background-color: #030126;
+    
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    margin-top: 160px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Zen Dots', sans-serif;
+    background: linear-gradient(45deg, #FEF39A 33%, #EE4B3F 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+    display: table;
+    margin-left: 90px;
+}
+
+.img {
+    width: 450px;
+    height: 450px;
+
+    margin-left: 80px;
+    padding-top: 80px;
+}
+
+.btn {
+    font-family: 'Zen Dots', 'Play', sans-serif;
+    color: #fff;
+    font-size: 28px;
+
+    width: 300px;
+    height: 65px;
+    border-style: none;
+    border-radius: 6px;
+
+    background: linear-gradient(to right, #FBD78B, #BF4BB4);
+
+    /* position: relative; */
+    /* z-index: 2; */
+    cursor: pointer;
+
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.btn:active {
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+
+.btn-shadow {
+    width: 300px;
+    height: 65px;
+
+    background: linear-gradient(to right, #FBD78B, #FBD78B, #BF4BB4);
+    border-radius: 6px;
+
+    position: absolute;
+    top:400px;
+    left: 780px;
+    z-index: 1;
+    cursor: pointer; 
+}
+
+.btn-div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* .btn-div:active {
+    opacity: 0.8;
+    transition: opacity 0.1s;
+} */
+
+.text {
+    font-family: 'Play', sans-serif;
+    background: linear-gradient(45deg, #AA39B4 10%, #FDDE72 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    display: table;
+    text-align: center;
+}
+
+.text-p {
+    font-family: 'Play', sans-serif;
+    background: linear-gradient(45deg, #AA39B4 10%, #FDDE72 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    display: table;
+    text-align: center;
+}
+
+p {
+    margin: 0px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
