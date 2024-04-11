@@ -1,0 +1,43 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Позиционируем относительно корня */
+  left: 50%;
+  top: 50%;
+}
+
+.loader {
+  animation: rotation 1s linear infinite;
+}
+
+/* Применяем анимацию только во время загрузки */
+.loader-container.loading .loader {
+  animation-play-state: running;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Скрываем лоадер после загрузки */
+.loader-container:not(.loading) .loader {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+}
+
+.loader-container.loading::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 44, 75, 0.5); /* полупрозрачный цвет фона */
+  z-index: -1;
+}
